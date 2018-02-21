@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Avenir;
+    src:url("Avenir Free/AvenirLTStd-Book.otf");
+}
+
+body {
+    font-family: Avenir;
+    margin: 0;
+}
+
+.content-container {
+    margin-left: 50px;
+    margin-right: 50px;
+    background: white;
+}
+
+.center {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.text-body {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.main-image {
+    width: 100%;
+}
+
+.inline {
+    width:100%;
+}
+
+.inline.half {
+    width:49%;
+}
+
+.title {
+    font-weight: bold;
+    margin-top:1em;
+    font-size: 24pt;
+    display: block;
+}
+
+.subtitle {
+    margin-top:.3em;
+    font-size: 18pt;
+    font-style: italic;
+    display: block;
+}
+
+.fixed {
+    left: 0;
+    width:200px;
+    top:200px;
+    z-index: -1;
+    position: fixed;
+}
+
+.glich_img {
+
+}
