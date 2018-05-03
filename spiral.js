@@ -19,7 +19,7 @@ function arrange(scroll) {
         var x = r * Math.cos(t);
         var y = r * Math.sin(t);
         
-        var cx = 70 + 50.0 / spiralRadius * x;
+        var cx = 65 + 50.0 / spiralRadius * x;
         var cy = 50 + 50.0 / spiralRadius * y;
         
         var maxDist = (Math.pow(phi, t) - Math.pow(phi, t - 2 * Math.PI)) * 50 / spiralRadius * 10;
