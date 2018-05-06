@@ -7,6 +7,8 @@ var startShift = Math.PI / 3;
 
 var maxWidth = 600;
 
+var fontSizes = [6, 14, 28, 36, 48];
+
 function arrange(scroll) {
     var children = $(".spiral-div");
     
@@ -25,13 +27,16 @@ function arrange(scroll) {
         var maxDist = (Math.pow(phi, t) - Math.pow(phi, t - 2 * Math.PI)) * 50 / spiralRadius * 10;
         var width = Math.min(maxDist, maxWidth);
         var ratio = $(child).height() / $(child).width();
+
+        var fontSize = fontSizes[Math.floor(width / maxWidth * fontSizes.length)];
         
         $(child).css(
             {
                 "left": cx + "%",
                 "top": cy + "%",
                 "width": width + "px",
-                "height": ratio * width + "px"
+                "height": ratio * width + "px",
+                "font-size": fontSize + "px"
             });
     }
 }
