@@ -110,7 +110,7 @@ body {
     font-size: 48px;
     line-height: 90%;
     background: white;
-    padding-left: 2px;
+    /* padding-left: 2px; */
     color:black;
 }
 
@@ -128,11 +128,15 @@ body {
     font-size: 24px;
     background: white;
     color:black;
+    margin-left: -2px;
+    box-shadow: inset 2px 0px 0px 0px #E249D7;
 }
 
 .my-bio {
     font-size: 1.2em;
     background: white;
+    margin-left: -2px;
+    box-shadow: inset 2px 0px 0px 0px #E249D7;
 }
 
 .glich_img {
@@ -147,4 +151,3 @@ a {
     body {
         font-size: 14pt;
     }
-}
