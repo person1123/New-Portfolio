@@ -38,6 +38,12 @@ function arrange(scroll) {
                 "height": ratio * width + "px",
                 "font-size": fontSize + "px"
             });
+        $(child).find(".spiral-contents").css(
+            {
+
+                "border-right": (width / 75.0) + "px solid #E249D7",
+                "border-bottom": (width / 75.0) + "px solid #E249D7"
+            });
     }
 }
 
