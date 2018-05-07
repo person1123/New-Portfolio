@@ -92,6 +92,7 @@ body {
     position: absolute;
     padding-bottom: 30%;
     padding-left: 10%;
+    transition: opacity .2s;
 }
 
 .sidebar-elt {
@@ -106,7 +107,7 @@ body {
 
 .my-name {
     font-family: Stout Deco;
-    font-size: 3em;
+    font-size: 48px;
     line-height: 90%;
     background: white;
     padding-left: 2px;
@@ -124,7 +125,7 @@ body {
 
 .my-title {
     font-weight: lighter;
-    font-size: 1.5em;
+    font-size: 24px;
     background: white;
     color:black;
 }
@@ -140,6 +141,6 @@ body {
 
 @media (max-device-width: 999px) {
     body {
-        font-size: 16pt;
+        font-size: 14pt;
     }
 }
