@@ -1,9 +1,13 @@
 .spiral {
     width: 80%;
-    max-width: calc(100% - 200px);
+    max-width: calc(100% - 300px);
     height: 100%;
-    position: fixed;
     right:0;
+    position: absolute;
+}
+
+.spiral.fixed {
+    position: fixed;
 }
 
 .scrollDummy {
@@ -57,6 +61,8 @@
 	height: 100%;
 	left: 0;
 	position: absolute;
+	/* overflow: auto; */
+	min-width: 1000px;
 }
 
 .spiral-bg-component.right {
@@ -86,4 +92,46 @@
 	bottom: 0;
 	position: absolute;
 	background: #ddd;
+}
+
+@media (max-width: 1315px) {
+	.spiral-bg-left {
+		min-width: unset;
+		width: 100%;
+	}
+}
+
+@media (max-width: 1525px) {
+
+	.spiral.fixed {
+		width: 1208px;
+		max-width: unset;
+	}
+}
+
+@media (max-width: 1408px) {
+	.spiral.fixed {
+		left:200px;
+	}
+}
+
+@media (max-width: 1000px) {
+	/*.sidebar-contents {
+		visibility: hidden;
+		width: 300px;
+		right: -30px;
+	}*/
+
+	.sidebar {
+		left: -150px;
+	}
+
+	.sidebar:hover {
+		left:0px;
+	}
+
+	.spiral {
+		width: calc(100% - 150px);
+		max-width: unset;
+	}
 }
