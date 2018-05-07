@@ -136,7 +136,7 @@
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 999px) {
 	.sidebar {
 		left: 0;
 		width: 100%;
