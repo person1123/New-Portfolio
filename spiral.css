@@ -192,8 +192,11 @@
 	}
 
 	.spiral.fixed {
-		left: 0;
-		width: 150%;
+		left: -85%;
+		width: 300%;
+		transform: scale(0.5, 0.5);
+		height: 200%;
+		top: -50%;
 	}
 
 	.scrollDummy {
