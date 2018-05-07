@@ -11,6 +11,7 @@ body {
     font-family: Avenir;
     margin: 0;
     background: #eee;
+    font-size: 12pt;
 }
 
 .content-container {
@@ -55,13 +56,13 @@ body {
 .title {
     font-weight: bold;
     margin-top:1em;
-    font-size: 24pt;
+    font-size: 2em;
     display: block;
 }
 
 .subtitle {
     margin-top:.3em;
-    font-size: 18pt;
+    font-size: 1.5em;
     font-style: italic;
     display: block;
 }
@@ -105,7 +106,7 @@ body {
 
 .my-name {
     font-family: Stout Deco;
-    font-size: 48px;
+    font-size: 3em;
     line-height: 90%;
     background: white;
     padding-left: 2px;
@@ -113,7 +114,6 @@ body {
 }
 
 .thumbnail-title {
-    /*font-size: 48px;*/
     background: white;
     margin-left: 10%;
     margin-top: 10%;
@@ -124,16 +124,22 @@ body {
 
 .my-title {
     font-weight: lighter;
-    font-size: 24px;
+    font-size: 1.5em;
     background: white;
     color:black;
 }
 
 .my-bio {
-    font-size: 18px;
+    font-size: 1.2em;
     background: white;
 }
 
 .glich_img {
 
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 16pt;
+    }
 }

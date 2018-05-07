@@ -126,12 +126,38 @@
 		left: -150px;
 	}
 
-	.sidebar:hover {
+	.sidebar:hover, .sidebar:focus {
 		left:0px;
 	}
 
 	.spiral {
 		width: calc(100% - 150px);
 		max-width: unset;
+	}
+}
+
+@media (max-width: 800px) {
+	.sidebar {
+		left: 0;
+		width: 100%;
+		height: 100px;
+	}
+
+	.sidebar-contents {
+		visibility: hidden;
+	}
+
+	.sidebar:hover, .sidebar:focus {
+		height: 100%;
+	}
+
+	.sidebar:hover .sidebar-contents, .sidebar:focus .sidebar-contents {
+		visibility: visible;
+		width: 90%;
+	}
+
+	.spiral {
+		top:100px;
+		width: 100%;
 	}
 }
