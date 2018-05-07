@@ -135,6 +135,17 @@
 		width: calc(100% - 150px);
 		max-width: unset;
 	}
+
+	body .sidebar-button {
+	    top: 100px;
+	    left: 40px;
+		visibility: visible;
+	}
+	html body input {
+	    top: 100px;
+	    left: 40px;
+		visibility: visible;
+	}
 }
 
 @media (max-device-width: 999px) {
@@ -144,16 +155,30 @@
 		height: 70px;
 	}
 
+	body .sidebar-button {
+		right: 0;
+		top: 0;
+		left: unset;
+		visibility: visible;
+	}
+	html body input {
+		right: 0;
+		top: 0;
+		left: unset;
+		visibility: visible;
+	}
+
 	.sidebar-contents {
 		visibility: hidden;
 	}
 
-	.sidebar:hover, .sidebar:focus {
+	/*.sidebar:hover, .sidebar:focus,*/
+	input:checked ~ .sidebar {
 		height: 100%;
 	}
 
 	/*.sidebar:hover .sidebar-contents, .sidebar:focus .sidebar-contents,*/
-	input:checked ~ .sidebar {
+	input:checked ~ .sidebar .sidebar-contents {
 		visibility: visible;
 		width: 90%;
 	}

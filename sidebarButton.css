@@ -4,28 +4,27 @@
     width: 70px;
     height: 70px;
     background: white;
-    top: 100px;
-    left: 40px;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     user-select: none;
     padding-left: 10px;
     padding-top: 13px;
     box-sizing: border-box;
+    visibility: hidden;
 }
 
-input {
+body input {
     width: 70px;
     height: 70px;
     background: white;
-    top: 100px;
-    left: 40px;
-    position: absolute;
+    position: fixed;
     display: block;
     z-index: 2;
 
     opacity: 0;
     cursor: pointer;
+
+    visibility: hidden;
 }
 
 .sidebar-button span {
