@@ -139,6 +139,10 @@ body {
 
 }
 
+a {
+    color: #4BB9E0;
+}
+
 @media (max-device-width: 999px) {
     body {
         font-size: 14pt;

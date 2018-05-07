@@ -41,10 +41,10 @@ function arrange(scroll) {
     }
 }
 
-$("document").ready(function() {
-    arrange(0);
-});
-
 $(window).scroll(function() {
     arrange(($(document).scrollTop()) / ($(".scrollDummy").height() - $(window).height()) * (maxT - startShift - 0.22));
+});
+
+$("document").ready(function() {
+    arrange(0);
 });
