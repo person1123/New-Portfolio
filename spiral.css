@@ -52,6 +52,13 @@
 	z-index: -10;
 }
 
+.spiral-bg-left {
+	width: 61.803398875%;
+	height: 100%;
+	left: 0;
+	position: absolute;
+}
+
 .spiral-bg-component.right {
 	width: 38.196601125%;
 	height: 100%;

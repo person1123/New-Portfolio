@@ -14,8 +14,8 @@ body {
 }
 
 .content-container {
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     background: white;
 }
 
@@ -30,6 +30,12 @@ body {
 .center {
     margin: 0 auto;
     max-width: 1000px;
+}
+
+.right {
+    max-width: 1000px;
+    right: 0;
+    position: absolute;
 }
 
 .text-body {
@@ -81,7 +87,7 @@ body {
 
 .sidebar {
     width: 20%;
-    min-width: 200px;
+    min-width: 300px;
     height: 100%;
     position: fixed;
     left: 0;
@@ -103,12 +109,17 @@ body {
     padding-bottom: 20px;
 }
 
+.sidebar a {
+    text-decoration: none;
+}
+
 .my-name {
     font-family: Stout Deco;
     font-size: 48px;
     line-height: 90%;
     background: white;
     padding-left: 2px;
+    color:black;
 }
 
 .thumbnail-title {
@@ -125,6 +136,7 @@ body {
     font-weight: lighter;
     font-size: 24px;
     background: white;
+    color:black;
 }
 
 .my-bio {
