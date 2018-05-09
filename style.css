@@ -21,6 +21,11 @@ body {
     position: absolute;
 }
 
+.text-body p {
+/*    margin-left: 100px;
+    margin-right: 100px;*/
+}
+
 @media(max-width: 1135px) {
     .content-container {
         margin-left: 0;
@@ -47,10 +52,16 @@ body {
 .inline {
     width:100%;
     vertical-align:middle;
+    display: inline-block;
 }
 
 .inline.half {
-    width:49%;
+    width: 49.6%;
+}
+
+.full-width {
+    margin-left: -100px;
+    margin-right: -100px;
 }
 
 .title {
