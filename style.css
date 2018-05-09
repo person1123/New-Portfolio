@@ -11,7 +11,7 @@ body {
     font-family: Avenir;
     margin: 0;
     background: #eee;
-    font-size: 12pt;
+    font-size: 14pt;
 }
 
 .content-container {
@@ -24,6 +24,8 @@ body {
 .text-body p {
 /*    margin-left: 100px;
     margin-right: 100px;*/
+    margin-bottom: 2em;
+    margin-top: 0;
 }
 
 @media(max-width: 1135px) {
@@ -53,6 +55,7 @@ body {
     width:100%;
     vertical-align:middle;
     display: inline-block;
+    margin-bottom: 2em;
 }
 
 .inline.half {
@@ -74,13 +77,15 @@ body {
     margin-top:1em;
     font-size: 2em;
     display: block;
+    margin-bottom: .5em;
 }
 
 .subtitle {
-    margin-top:.3em;
+    margin-top: -.6em;
     font-size: 1.5em;
     font-style: italic;
     display: block;
+    margin-bottom: .7em;
 }
 
 .fixed-image {
@@ -153,6 +158,18 @@ body {
     background: white;
     margin-left: -2px;
     box-shadow: inset 2px 0px 0px 0px #E249D7;
+}
+
+.sidebar-header .my-title {
+    background: none;
+    color:white;
+    box-shadow: none;
+}
+
+.sidebar-header .my-name {
+    background: none;
+    color:white;
+    box-shadow: none;
 }
 
 .glich_img {
