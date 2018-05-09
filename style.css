@@ -59,6 +59,11 @@ body {
     width: 49.6%;
 }
 
+.centered {
+    margin: 0 auto;
+    display: block;
+}
+
 .full-width {
     margin-left: -100px;
     margin-right: -100px;
