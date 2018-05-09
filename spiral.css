@@ -148,6 +148,12 @@
 	}
 }
 
+.sidebar-header {
+    opacity: 0;
+    padding-top: 0;
+    transition: opacity 0.2s;
+}
+
 @media (max-device-width: 999px), (max-width: 768px) {
 	.sidebar {
 		left: 0;
@@ -171,6 +177,14 @@
 	.sidebar-contents {
 		opacity: 0;
 		padding-bottom: 100px;
+	}
+    
+    .sidebar-header {
+        opacity: 1;
+    }
+    
+    input:checked ~ .sidebar .sidebar-header {
+		opacity: 0;
 	}
 
 	input:checked ~ .sidebar {
