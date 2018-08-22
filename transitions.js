@@ -4,6 +4,7 @@ $(function(){
     prefetch: true,
     debug: true,
     cacheLength: 2,
+    blacklist: '.no-smoothstate',
     onStart: {
       duration: 250, // Duration of our animation
       render: function ($container) {
