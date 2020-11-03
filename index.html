@@ -1,178 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css"></link>
-        <link rel="stylesheet" type="text/css" href="spiral.css"></link>
-        <link rel="stylesheet" type="text/css" href="sidebarButton.css"></link>
-        <link rel="stylesheet" type="text/css" href="transitions.css"></link>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="jquery.smoothState.min.js"></script>
-        <script src="transitions.js"></script>
-        <!--  http://www.narrowdesign.com/ -->
-        <meta name="viewport" content="width=device-width">
-    </head>
-    <body>
-    	<div id="main">
-	        <input type="checkbox" />
-	        <div class="sidebar-button">
-	            <span></span>
-	            <span></span>
-	            <span></span>
-	        </div>
-	        <div class="spiral fixed">
-	            <div class="spiral-bg">
-	        	<div class="spiral-bg-component right">
-	    		<div class="spiral-bg-component bottom">
-	    		<div class="spiral-bg-component left">
-	    		<div class="spiral-bg-component top">
-	    			
-	        	<div class="spiral-bg-component right">
-	    		<div class="spiral-bg-component bottom">
-	    		<div class="spiral-bg-component left">
-	    		<div class="spiral-bg-component top">
 
-	    		</div>
-	    		</div>
-	    		</div>
-	            </div>
+{% include _head.html %}
 
-	    		</div>
-	    		</div>
-	    		</div>
-	            </div>
+<body>
+	<div id="main">
+		{% include _cruft.html %}
 
-	            </div>
-	        </div>
-	        <div class="spiral fixed transition-element transition-element-fadeinup">
-	            <a href="marsgrain.html">
-	            <div class="spiral-div">
-	            	<div class="spiral-contents" style='background-image: url("Thumbnails/02_marsgrain.png")'>
-		            	<span class="thumbnail-title">Mars Grain Company Branding</span>
-		            </div>
-	            </div>
-		        </a>
-	            <a href="bladerunner.html">
-	            <div class="spiral-div">
-	            	<div class="spiral-contents" style='background-image: url("Thumbnails/03_bladerunner.png")'>
-	            		<span class="thumbnail-title">Blade Runner Cover Redesign</span>
-		            </div>
-	            </div>
-		        </a>
-	            <a href="bloodandink.html">
-	            <div class="spiral-div">
-	            	<div class="spiral-contents" style='background-image: url("Thumbnails/04_bloodandink.png")'>
-	            		<span class="thumbnail-title">Blood and Ink Interactive Magazine</span>
-		            </div>
-	            </div>
-		        </a>
-	            <a href="21cab.html">
-	            <div class="spiral-div">
-	            	<div class="spiral-contents" style='background-image: url("Thumbnails/05_21cab.png")'>
-	            		<span class="thumbnail-title">21st Century Advertising Breakdown Zine</span>
-		            </div>
-	            </div>
-		        </a>
-	            <a href="bitcamp2017.html">
-	            <div class="spiral-div">
-	            	<div class="spiral-contents" style='background-image: url("Thumbnails/06_bitcamp2017.png")'>
-	            		<span class="thumbnail-title">Bitcamp 2017</span>
-		            </div>
-	            </div>
-	            <a href="zengarden.html">
-	            <div class="spiral-div">
-	            	<div class="spiral-contents" style='background-image: url("Thumbnails/07_zengarden.png")'>
-	            		<span class="thumbnail-title">Zen Garden To Do List</span>
-		            </div>
-	            </div>
-	            <a href="starowiesky.html">
-	            <div class="spiral-div">
-	            	<div class="spiral-contents" style='background-image: url("Thumbnails/08_starowiesky.png")'>
-	            		<span class="thumbnail-title">Starowiesky Poster</span>
-		            </div>
-	            </div>
-		        </a>
-	            <a href="reentryforever.html">
-	            <div class="spiral-div">
-	            	<div class="spiral-contents" style='background-image: url("Thumbnails/01_reentryforever.png")'>
-	            		<span class="thumbnail-title">Reentry Forever</span>
-	            	</div>
-	            </div>
-		        </a>
-	            <a href="bitcamp2018.html">
-	            <div class="spiral-div">
-	            	<div class="spiral-contents" style='background-image: url("Thumbnails/09_bitcamp2018.png")'>
-	            		<span class="thumbnail-title">Bitcamp 2018</span>
-		            </div>
-	            </div>
-		        </a>
-	            <a href="decideotron.html">
-	            <div class="spiral-div">
-	            	<div class="spiral-contents" style='background-image: url("Thumbnails/10_capstone.png")'>
-	            		<span class="thumbnail-title">Decideotron 2000</span>
-		            </div>
-	            </div>
-		        </a>
-	            <a href="situations.html">
-		            <div class="spiral-div">
-		            	<div class="spiral-contents" style='background-image: url("Thumbnails/11_situations.jpg")'>
-		            		<span class="thumbnail-title">Situations</span>
-			            </div>
-		            </div>
-		        </a>
-	        </div>
-	        
-	        <div class="sidebar">
-                <div class="sidebar-header">
-                    <span class="my-name">
-                        Noa Chazan
-                    </span>
-                    <br/>
-                    <span class="my-title">
-                        Designer + Developer
-                    </span>
-                </div>
-	        	<div class="sidebar-contents">
-                    <div class="sidebar-elt">
-                        <span class="my-name">
-                            Noa Chazan
-                        </span>
-                        <br/>
-                        <span class="my-title">
-                            Designer + Developer
-                        </span>
-                    </div>
-		        	<div class="sidebar-elt">
-		        		<div class="my-bio">
-		        			I like coding, visual design, and UX work. Here are some things that I made.
-		        		</div>
-		        	</div>
-		        	<div class="sidebar-elt">
-		        		<div class="my-bio">
-                            <a href='mailto&#58;%6E%65%63&#104;az&#97;&#110;&#64;&#103;&#109;%6&#49;i&#108;%2E%&#54;&#51;&#111;m'>Email</a>
-		        		</div>
-		        		<div class="my-bio">
-		        			<a href="resume.pdf" class="no-smoothstate">Resume</a>
-		        		</div>
-		        		<div class="my-bio">
-		        			<a href="https://github.com/person1123">Github</a>
-		        		</div>
-		        		<div class="my-bio">
-		        			<a href="https://behance.net/nechazan">Behance</a>
-		        		</div>
-		        		<div class="my-bio">
-		        			<a href="https://twitter.com/person_1123">Extremely Unprofessional Twitter</a>
-		        		</div>
-		        	</div>
-		        </div>
-	        </div>
-	        <div class="scrollDummy">
-	        </div>
-        	<script src="spiral.js"></script>
-	        <!-- <script type="text/javascript">
-				$("document").ready(function() {
-				    arrange(0);
-				});
-			</script> -->
-	    </div>
-    </body>
+		{% include _background-spiral.html %}
+		<div class="spiral fixed transition-element transition-element-fadeinup">
+			{% for project in collections.sortedProjects %}
+			<a href="{{ project.url }}">
+				<div class="spiral-div">
+					<div class="spiral-contents"
+						style='background-image: url("/img/Thumbnails/{{ project.data.thumbnail }}")'>
+						<span class="thumbnail-title">
+							{% if project.data.homepageTitle != null %}
+							{{ project.data.homepageTitle }} {% else %} {{ project.data.title }} {% endif %}</span>
+					</div>
+				</div>
+			</a>
+			{% endfor %}
+		</div>
+
+
+		{% include _sidebar.html %}
+		<div class="scrollDummy">
+		</div>
+		<script src="/js/spiral.js"></script>
+	</div>
+</body>
+
 </html>

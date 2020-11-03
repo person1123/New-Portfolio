@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+{% include _head.html %}
+
+<body>
+    <div id="main">
+        {% include _cruft.html %}
+        <div class="fixed-image">
+            <img class="glitch_img" src="/img/glitch2.png">
+        </div>
+
+        {% include _background-spiral.html %}
+        <div class="spiral transition-element transition-element-fadeinright">
+            <div class="spiral-bg-left">
+                <div class="content-container">
+                    <img class="main-image" src="{{ mainImage }}">
+                    <div class="text-body">
+                        <span class="title">{{ title }}</span>
+                        {% if subtitle != null %}
+                        <span class="subtitle">{{ subtitle }}</span>
+                        {% endif %}
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include _sidebar.html %}
+    </div>
+</body>
+
+</html>

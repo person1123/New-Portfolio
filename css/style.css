@@ -1,0 +1,201 @@
+@font-face {
+    font-family: Avenir;
+    src:url("/Avenir Free/AvenirLTStd-Book.otf");
+}
+@font-face {
+    font-family: Stout Deco;
+    src:url("/img/StoutDeco.ttf");
+}
+
+body {
+    font-family: Avenir;
+    margin: 0;
+    background: #eee;
+    font-size: 14pt;
+}
+
+.content-container {
+    background: white;
+    max-width: 1000px;
+    right: 0;
+    position: absolute;
+}
+
+.text-body p {
+/*    margin-left: 100px;
+    margin-right: 100px;*/
+    margin-bottom: 2em;
+    margin-top: 0;
+}
+
+@media(max-width: 1135px) {
+    .content-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.text-body {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@media(max-width: 500px) {
+    .text-body {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+.main-image {
+    width: 100%;
+}
+
+.inline {
+    width:100%;
+    vertical-align:middle;
+    display: inline-block;
+    margin-bottom: 2em;
+}
+
+.inline.half {
+    width: 49.6%;
+}
+
+.centered {
+    margin: 0 auto;
+    display: block;
+}
+
+.full-width {
+    margin-left: -100px;
+    margin-right: -100px;
+}
+
+.title {
+    font-weight: bold;
+    margin-top:1em;
+    font-size: 2em;
+    display: block;
+    margin-bottom: .5em;
+}
+
+.subtitle {
+    margin-top: -.6em;
+    font-size: 1.5em;
+    font-style: italic;
+    display: block;
+    margin-bottom: .7em;
+}
+
+.fixed-image {
+    left: 0;
+    width:200px;
+    top:200px;
+    z-index: -1;
+    position: fixed;
+}
+
+.sidebar {
+    width: 20%;
+    min-width: 300px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #E249D7;
+    transition: left .3s, height .3s;
+}
+
+.sidebar-contents {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 30%;
+    padding-left: 10%;
+    transition: opacity .2s;
+}
+
+.sidebar-elt {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.my-name {
+    font-family: Stout Deco;
+    font-size: 48px;
+    line-height: 90%;
+    background: white;
+    /* padding-left: 2px; */
+    color:black;
+}
+
+.thumbnail-title {
+    background: white;
+    margin-left: 10%;
+    margin-top: 10%;
+    padding-right: 15%;
+    display: inline-block;
+    position: relative;
+}
+
+.my-title {
+    font-weight: lighter;
+    font-size: 24px;
+    background: white;
+    color:black;
+    margin-left: -2px;
+    box-shadow: inset 2px 0px 0px 0px #E249D7;
+}
+
+.my-bio {
+    font-size: 1.2em;
+    background: white;
+    margin-left: -2px;
+    box-shadow: inset 2px 0px 0px 0px #E249D7;
+}
+
+.sidebar-header .my-title {
+    background: none;
+    color:white;
+    box-shadow: none;
+}
+
+.sidebar-header .my-name {
+    background: none;
+    color:white;
+    box-shadow: none;
+}
+
+.glich_img {
+
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+    margin-bottom: 2em;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+a {
+    color: #4BB9E0;
+}
+
+@media (max-device-width: 999px) {
+    body {
+        font-size: 14pt;
+    }

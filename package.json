@@ -1,0 +1,23 @@
+{
+  "name": "New-Portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jquery.smoothState.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/person1123/New-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/person1123/New-Portfolio/issues"
+  },
+  "homepage": "https://github.com/person1123/New-Portfolio#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}
