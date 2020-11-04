@@ -13,4 +13,10 @@ module.exports = function (eleventyConfig) {
             (a, b) => a.data.order - b.data.order
         );
     });
+
+    return {
+        dir: {
+            output: "docs"
+        }
+    };
 };
