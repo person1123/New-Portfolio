@@ -206,19 +206,38 @@
 		height: calc(100% - 70px);
 	}
 
+	.scrollDummy {
+	    height: 4500px;
+	}
+
 	.spiral.fixed {
-		left: -42%;
-		width: 150%;
-		/* transform: scale(0.5, 0.5); */
+		left: -22%;
 		height: 100%;
 		top: 0;
+	}
+
+    .spiral-div {
+        transform: scale(0.8, 0.8);
+    }
+}
+
+@media (min-width: 601px) and (max-height: 450px) {
+	.spiral.fixed {
+		top: -25%;
 	}
     
     .spiral-div {
         transform: scale(0.5, 0.5);
     }
+}
 
-	.scrollDummy {
-	    height: 4500px;
+@media (max-width: 600px) {
+	.spiral.fixed {
+		left: -42%;
+		width: 150%;
 	}
+    
+    .spiral-div {
+        transform: scale(0.5, 0.5);
+    }
 }
