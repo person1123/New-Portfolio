@@ -131,7 +131,7 @@ body {
     font-size: 48px;
     line-height: 90%;
     background: white;
-    /* padding-left: 2px; */
+    padding-left: 2px;
     color:black;
 }
 
@@ -149,15 +149,17 @@ body {
     font-size: 24px;
     background: white;
     color:black;
-    margin-left: -2px;
-    box-shadow: inset 2px 0px 0px 0px #E249D7;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .my-bio {
     font-size: 1.2em;
     background: white;
-    margin-left: -2px;
-    box-shadow: inset 2px 0px 0px 0px #E249D7;
+    padding-left: 2px;
+    padding-top: .1em;
+    padding-bottom: .1em;
+    line-height: 100%;
 }
 
 .sidebar-header .my-title {

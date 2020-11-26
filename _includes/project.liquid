@@ -16,9 +16,15 @@
                 <div class="content-container">
                     <img class="main-image" src="{{ mainImage }}">
                     <div class="text-body">
-                        <span class="title">{{ title }}</span>
+                        <span class="title">
+                            {% if titleLink != null %}
+                                <a href="{{titleLink}}">{{title}}</a>
+                            {% else %}
+                                {{title }}
+                            {% endif %}
+                        </span>
                         {% if subtitle != null %}
-                        <span class="subtitle">{{ subtitle }}</span>
+                            <span class="subtitle">{{ subtitle }}</span>
                         {% endif %}
                         {{ content }}
                     </div>
