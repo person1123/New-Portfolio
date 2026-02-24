@@ -8,6 +8,8 @@ var startShift = Math.PI / 3;
 var maxWidth = 600;
 
 var fontSizes = [6, 14, 28, 36, 48];
+var maxFontSize = 48;
+var minFontSize = 0;
 
 function arrange(scroll) {
     var children = $(".spiral-div");
@@ -28,7 +30,7 @@ function arrange(scroll) {
         var width = Math.min(maxDist, maxWidth);
         var ratio = $(child).height() / $(child).width();
 
-        var fontSize = fontSizes[Math.floor(width / maxWidth * fontSizes.length)];
+        var fontSize = Math.max(minFontSize, Math.min(maxFontSize, width / maxWidth * maxFontSize));
         
         $(child).css(
             {
